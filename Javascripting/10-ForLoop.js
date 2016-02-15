@@ -2,9 +2,9 @@
 
 /***********************************************************
  *
- * In which the use of a foor loop is demonstrated, adding
- * the variable being iterated to another variable to sum
- * the values of iteration.
+ * In which the use of a for loop is demonstrated, adding
+ * the variable being iterated over to another variable, to
+ * sum the values of iteration.
  *
  **********************************************************/
 
