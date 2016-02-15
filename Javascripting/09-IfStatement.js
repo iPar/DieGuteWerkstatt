@@ -15,7 +15,3 @@ if (fruit.length > 5)                                       //  Boolean conditio
 else                                                        //  Else statement handles all situations where above boolean
     console.log('The fruit name has five characters or less.'); //  condition evaluates to 'false', printing this line to
                                                                 //  the console (stdout).
-
-
-
-
