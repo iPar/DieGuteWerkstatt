@@ -9,7 +9,7 @@
  **********************************************************/
 
 var http = require('http');                                 //  Module for 'http' protocol transfers, but only using 'GET' here
-var url = process.argv[2];                                  //  Assign firt command line argument to the variable 'url'
+var url = process.argv[2];                                  //  Assign first command line argument to the variable 'url'
 
 http.get(url, function (res) {                              //  Node provided convenience '.get()' method
     res.setEncoding('utf8');                                //  Set encoding to read in as a string rather than as a buffer object
