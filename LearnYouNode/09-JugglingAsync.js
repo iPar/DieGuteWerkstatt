@@ -3,12 +3,12 @@
 /***********************************************************
  *
  * In which multiple HTTP GET requests are performed using
- * urls provided at the command-line argument, and multiple
+ * urls provided as command-line argument(s), and multiple
  * 'data' events are read in as a string and concatenated
- * together for each HTTP GET request. As these are async
+ * together for each HTTP GET request.  As these are async
  * calls, the # of completed requests must be tracked so
  * that the responses are not output until all requests have
- * ended.
+ * ended.  Note this solution handles any number of urls.
  *
  **********************************************************/
 
@@ -31,13 +31,15 @@ function sendRequest (index) {                              //  Bulk of solution
                 }
             }
         });
+    }).on('error', function (e) {                           //  Handles error message logging where http.get returns 'error'.
+        console.error(e.message);
     });
 }
 
-for (var i = 2; i < process.argv.length; i++) {             //  Loads command-line arguments into urls array.
+for (var i = 2; i < process.argv.length; i++) {             //  Loads command-line arguments into 'urls' array.
     urls[i-2] = process.argv[i];
 }
 
-for (var j = 0; j < urls.length; j++) {
-    sendRequest(j);
+for (var j = 0; j < urls.length; j++) {                     //  Loops through 'urls' array, calling 'sendRequest' function for
+    sendRequest(j);                                         //    each 'url' in 'urls', passing in 'j' by value, not by reference.
 }
