@@ -29,7 +29,6 @@ function dateStamp () {                                     //  This function cr
 
 var net = require('net');                                   //  Module for 'net' is required for raw TCP networking funcions.
 var server = net.createServer(function (socket) {           //  Server is created with the required callback function.
-    socket.end(dateStamp());                                //  'dateStamp' function called and writtent to the 'socket' using
+    socket.end(dateStamp());                                //  'dateStamp' function called and written to the 'socket' using
 });                                                         //    the 'end' method.
 server.listen(process.argv[2]);                             //  Server listens to TCP port specified as first command-line argument.
-
