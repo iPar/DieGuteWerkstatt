@@ -1,0 +1,14 @@
+{
+  "name": "ipar",
+  "version": "1.0.0",
+  "description": "How-To-NPM exercises done on workshoppers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Isaac Parham",
+  "license": "MIT",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}
