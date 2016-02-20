@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'dist-tag', 'ls', 'ipar' ]
+2 info using npm@3.7.3
+3 info using node@v0.12.7
+4 silly mapToRegistry name ipar
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry http://localhost:15443/
+7 silly mapToRegistry uri http://localhost:15443/ipar
+8 verbose request uri http://localhost:15443/-/package/ipar/dist-tags
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 3:08:41 PM
+11 verbose request id 3c2664874bd61b07
+12 http request GET http://localhost:15443/-/package/ipar/dist-tags
+13 http 404 http://localhost:15443/-/package/ipar/dist-tags
+14 verbose headers { 'content-type': 'application/json',
+14 verbose headers   date: 'Sat, 20 Feb 2016 23:08:41 GMT',
+14 verbose headers   connection: 'keep-alive',
+14 verbose headers   'transfer-encoding': 'chunked' }
+15 error dist-tag ls Couldn't get dist-tag data for ipar
+16 verbose stack Error: missing : -/package/ipar/dist-tags
+16 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+16 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+16 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+16 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+16 verbose stack     at Request.emit (events.js:110:17)
+16 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+16 verbose stack     at Request.emit (events.js:129:20)
+16 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+16 verbose stack     at IncomingMessage.emit (events.js:129:20)
+16 verbose stack     at _stream_readable.js:908:16
+17 verbose statusCode 404
+18 verbose cwd /home/pablo/Coding/DieGuteWerkstatt/HowToNPM
+19 error Linux 3.16.0-60-generic
+20 error argv "node" "/usr/local/bin/npm" "dist-tag" "ls" "ipar"
+21 error node v0.12.7
+22 error npm  v3.7.3
+23 error code E404
+24 error 404 missing : -/package/ipar/dist-tags
+25 verbose exit [ 1, true ]

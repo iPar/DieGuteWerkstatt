@@ -1,6 +1,6 @@
 {
   "name": "ipar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How-To-NPM exercises done on workshoppers.",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "@linclark/pkg": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iPar/DieGuteWerkstatt/tree/master/HowToNPM"
   }
 }
